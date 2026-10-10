@@ -1,0 +1,136 @@
+
+/* ===== General ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+/* ===== Main Heading ===== */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #2563eb;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ===== Tasks List ===== */
+#tasks {
+    max-width: 800px;
+    margin: 0 auto 25px;
+}
+
+#taskList {
+    list-style: none;
+    display: grid;
+    gap: 12px;
+}
+
+#taskList li {
+    background: #ffffff;
+    padding: 18px 20px;
+    border-radius: 10px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.06);
+    overflow-wrap: anywhere;
+    line-height: 1.6;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#taskList li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.1);
+}
+
+/* ===== Forms ===== */
+form {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    padding: 22px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* ===== Inputs & Select ===== */
+input,
+select {
+    flex: 1 1 180px;
+    min-width: 0;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    background: #ffffff;
+    color: #1e293b;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+input:focus,
+select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+/* ===== Buttons ===== */
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    form {
+        padding: 16px;
+    }
+
+    input,
+    select,
+    button {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+}

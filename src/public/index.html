@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>task-app</title>
+</head>
+<body>
+    <h1>task-app</h1>
+
+    <div id="tasks">
+        <ul id="taskList"></ul>
+    </div>
+
+    <form id="addTaskForm">
+        <input type="text" placeholder="Title" name="title" required>
+        <input type="text" placeholder="Description" name="description">
+        <select name="status">
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+        </select>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <form id="getTasksForm">
+        <button type="submit">Get Tasks</button>
+    </form>
+
+    <form id="deleteTaskForm">
+        <input type="text" placeholder="Task ID" name="id" required>
+        <button type="submit">Delete Task</button>
+    </form>
+
+    <form id="updateTaskForm">
+        <input type="text" placeholder="Task ID" name="id" required>
+        <input type="text" placeholder="Title" name="title" required>
+        <input type="text" placeholder="Description" name="description">
+        <select name="status">
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+        </select>
+        <button type="submit">Update Task</button>
+    </form>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
